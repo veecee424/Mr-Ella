@@ -5,6 +5,7 @@ html {
 }
 html body {
     font-family: 'Raleway', sans-serif;
+    overflow-x: hidden; 
 }
 .menu-btn {
   position: absolute;
@@ -48,14 +49,14 @@ html body {
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #373737;
+    background: #4a4866;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #444;
+    background: #4a4866;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -66,18 +67,18 @@ html body {
         box-shadow: 10px 10px 15px black;
       background: url("https://res.cloudinary.com/veecee/image/upload/c_scale,h_250,w_250/v1571049884/first_3_tcpsfh.jpg"); /*Menu picture*/
       border-radius: 5%;
-      border: solid 3px #590f0f; }
+      border: solid 3px #ffbf00; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #590f0f; }
+      color: #ffbf00; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
-    font-size: 30px;
+    font-size: 1rem;
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
@@ -85,7 +86,7 @@ html body {
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #590f0f; }
+      color: #ffbf00; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -103,7 +104,7 @@ html body {
   box-sizing: border-box; }
 
 body {
-  background: #444;
+  background: #4a4866;
   color: black; /*fIRSTNAME text color and most text colors*/
   height: 100%;
   margin: 0;
@@ -111,7 +112,7 @@ body {
   line-height: 1.5; }
   body#bg-img {
     /*  background-image: linear-gradient(to right, red, black, red); */
-    background: url(https://res.cloudinary.com/veecee/image/upload/v1571064828/project3_r28ibi.jpg); /*homepage background image*/
+    background: url(https://res.cloudinary.com/veecee/image/upload/q_auto:best/v1580056875/nysc_img_u2hzka.jpg); /*homepage background image*/
     background-attachment: fixed;
       background-repeat: no-repeat;
     background-size: cover; }
@@ -123,7 +124,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.9); } /*Homepage background color*/
+      background: #4a4866; } /*Homepage background color*/
 
 h1,
 h2,
@@ -151,7 +152,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #590f0f; }
+  color: #ffbf00; }
 
 main {
   padding: 4rem;
@@ -161,7 +162,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #590f0f;
+        color: #ffbf00;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -188,13 +189,12 @@ main {
     margin: auto;
       box-shadow: 10px 10px 105px black;
     border-radius: 5%;
-    border: #590f0f 3px solid; }
+    border: #ffbf00 3px solid; }
   .about-info .bio {
     grid-area: bio;
-    font-size: 1.5rem; 
-      background-color: #590f0f;
-      padding-left: 5px;
-      padding-top: 50px;
+    font-size: 1rem; 
+      background-color: #ffbf00;
+      padding: 20px 20px;
       box-shadow: 10px 10px 15px black;
         border-radius: 20px;
 }
@@ -206,14 +206,15 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #590f0f;
+    background: #ffbf00;
     padding: 0.5rem;
-    border-bottom: #590f0f 5px solid;
+    border-bottom: #ffbf00 5px solid;
     border-radius: 5%;
 }
 
 .bio {
     width: 100%;
+    text-align: justify;
 }
 
 .projects {
@@ -225,7 +226,7 @@ main {
     border: 3px black solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #590f0f;
+      border-color: #ffbf00;
       transition: all 0.5s ease-out; }
 
 .boxes {
@@ -235,7 +236,7 @@ main {
   align-items: center;
   margin-top: 1rem; }
   .boxes div {
-    font-size: 2rem;
+    font-size: 1rem;
     border: 3px black solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
@@ -255,7 +256,7 @@ box-shadow: 10px 10px 15px black;
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #590f0f;
+    background: #ffbf00;
     color: #000; }
 
 .btn-dark {
@@ -267,7 +268,7 @@ box-shadow: 10px 10px 15px black;
   color: black; }
 
 #main-footer {
-  text-align: center;
+  text-align: left;
   padding: 1rem;
   background: black;
   color: #fff;
@@ -305,10 +306,10 @@ box-shadow: 10px 10px 15px black;
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/150px.jpg"); /*background image*/
+      background: url(https://res.cloudinary.com/veecee/image/upload/c_scale,h_150,w_150/v1571049914/img_to_use_3_qmxdzr.jpg); /*background image*/
       width: 150px;
       height: 150px; 
-        border: 1px solid #590f0f;
+        border: 1px solid #ffbf00;
     }
     
   .about-info {
@@ -327,3 +328,5 @@ box-shadow: 10px 10px 15px black;
       font-size: 5rem; }
   .projects {
     grid-template-columns: 1fr; } }
+
+
