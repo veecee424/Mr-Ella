@@ -49,14 +49,14 @@ html body {
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #4a4866;
+    background: #1d2228;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #4a4866;
+    background: #1d2228;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -66,15 +66,15 @@ html body {
       height: 250px;
         box-shadow: 10px 10px 15px black;
       background: url("https://res.cloudinary.com/veecee/image/upload/c_scale,h_250,w_250/v1571049884/first_3_tcpsfh.jpg"); /*Menu picture*/
-      border-radius: 5%;
-      border: solid 3px #ffbf00; }
+      border-radius: 50%;
+      border: solid 1px #FB8122; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #ffbf00; }
+      color: #FB8122; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -86,7 +86,7 @@ html body {
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #ffbf00; }
+      color: #FB8122; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -104,15 +104,15 @@ html body {
   box-sizing: border-box; }
 
 body {
-  background: #4a4866;
-  color: black; /*fIRSTNAME text color and most text colors*/
+  background: #1d2228;
+  color: #E1E2E2; /*fIRSTNAME text color and most text colors*/
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
     /*  background-image: linear-gradient(to right, red, black, red); */
-    background: url(https://res.cloudinary.com/veecee/image/upload/q_auto:best/v1580056875/nysc_img_u2hzka.jpg); /*homepage background image*/
+    /*background: linear-gradient(to right, #FB8122, #1d2228, yellow); homepage background image*/
     background-attachment: fixed;
       background-repeat: no-repeat;
     background-size: cover; }
@@ -124,7 +124,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: #4a4866; } /*Homepage background color*/
+      background:  linear-gradient(to right, #1d2228, #1d2228 ,#1d2228); } /*Homepage background color*/
 
 h1,
 h2,
@@ -135,9 +135,7 @@ h3 {
   h2.lg-heading,
   h3.lg-heading {
     font-size: 6rem; }
-  h1.sm-heading,
-  h2.sm-heading,
-  h3.sm-heading {
+  .sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(73, 73, 73, 0.5); }
@@ -152,7 +150,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #ffbf00; }
+  color: #FB8122; }
 
 main {
   padding: 4rem;
@@ -162,7 +160,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #ffbf00;
+        color: #FB8122;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -182,21 +180,25 @@ main {
   grid-gap: 30px;
   grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); 
-
+margin-top: 3rem;
 }
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
       box-shadow: 10px 10px 105px black;
     border-radius: 5%;
-    border: #ffbf00 3px solid; }
+    border: #FB8122 1px solid; 
+      border-radius: 50%
+}
   .about-info .bio {
+      margin: 0px;
     grid-area: bio;
     font-size: 1rem; 
-      background-color: #ffbf00;
+      background-color: #FB8122;
       padding: 20px 20px;
       box-shadow: 10px 10px 15px black;
         border-radius: 20px;
+      color: #1d2228;
 }
 
   .about-info .job-1 {
@@ -206,15 +208,15 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #ffbf00;
+    background: #FB8122;
     padding: 0.5rem;
-    border-bottom: #ffbf00 5px solid;
+    border-bottom: #FB8122 5px solid;
     border-radius: 5%;
 }
 
 .bio {
     width: 100%;
-    text-align: justify;
+/*    text-align: justify;*/
 }
 
 .projects {
@@ -223,10 +225,12 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
-    border: 3px black solid; }
+    border: 3px black solid; 
+    border-radius: 50%;
+}
     .projects img:hover {
       opacity: 0.5;
-      border-color: #ffbf00;
+      border-color: #FB8122;
       transition: all 0.5s ease-out; }
 
 .boxes {
@@ -234,7 +238,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 1rem; }
+  margin-top: 3rem; }
   .boxes div {
     font-size: 1rem;
     border: 3px black solid;
@@ -243,12 +247,19 @@ main {
     transition: all 0.5s ease-out; 
 box-shadow: 10px 10px 15px black;
 }
+
+.icons a i {
+    color: #FB8122
+}
+
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
       background: azure;
       color: #000; }
       .boxes div:hover span {
-        color: black; }
+        color: #1d2228; }
+
+
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -256,7 +267,7 @@ box-shadow: 10px 10px 15px black;
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #ffbf00;
+    background: #FB8122;
     color: #000; }
 
 .btn-dark {
@@ -265,7 +276,7 @@ box-shadow: 10px 10px 15px black;
 
 .btn-light {
   background: #c4c4c4;
-  color: black; }
+  color: #1d2228; }
 
 #main-footer {
   text-align: left;
@@ -276,6 +287,7 @@ box-shadow: 10px 10px 15px black;
 
 @media screen and (min-width: 1171px) {
   .projects {
+      margin-top: 3rem;
     grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
@@ -288,7 +300,7 @@ box-shadow: 10px 10px 15px black;
     text-align: center; }
     main .lg-heading {
       line-height: 1;
-      margin-bottom: 1rem; }
+      margin-bottom: 0rem; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -309,12 +321,15 @@ box-shadow: 10px 10px 15px black;
       background: url(https://res.cloudinary.com/veecee/image/upload/c_scale,h_150,w_150/v1571049914/img_to_use_3_qmxdzr.jpg); /*background image*/
       width: 150px;
       height: 150px; 
-        border: 1px solid #ffbf00;
+        border: 1px solid #FB8122;
+        border-radius: 50%
     }
     
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr; 
+    margin-top: 4rem
+    }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
@@ -325,8 +340,9 @@ box-shadow: 10px 10px 15px black;
       margin-top: 10vh; }
     main .lg-heading {
       margin-top: 1rem;
-      font-size: 5rem; }
+      font-size: 3.5rem; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; 
+    margin-top: 3rem} }
 
 
