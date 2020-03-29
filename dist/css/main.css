@@ -279,11 +279,15 @@ box-shadow: 10px 10px 15px black;
   color: #1d2228; }
 
 #main-footer {
+  padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   text-align: left;
-  padding: 1rem;
   background: black;
-  color: #fff;
-  height: 70px; }
+  height: 4rem;
+    margin-bottom: 0rem;
+color: #FB8122;
+font-style: italic;
+font-size: 0.75rem}
 
 @media screen and (min-width: 1171px) {
   .projects {
